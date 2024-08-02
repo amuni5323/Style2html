@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ background-color: whitesmoke;
+        
+        z-index: -3;
+        }
+        
+          .button{background-color: white;
+            max-width: 140px;
+            padding-block: 20px;
+            margin-top: 100px;
+
+          }
+        
+        .my-button{
+            background-color: green;
+            color: white ;
+            padding: 14px 20px;
+            text-align:center ;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+
+
+        }
+        .my-button:hover{
+            color: black;
+            background-color:white;
+           
+            border-collapse: collapse;
+            border: 3px solid green;
+        }
+        #drinks{ background-color: white;
+            padding-block: 1px;
+        max-width: 500px;}
+        ul{ list-style-type:square;  
+            background-color: yellow;
+            max-width: 450px;
+            
+        }
+        li::marker{
+            color: orange;
+        }
+    
+
+     
+    
+#img-zindex{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    z-index: -1;
+    margin: 0px;
+    
+   height: 150px;
+}
+#h1{ font-size: 60px;}
+
+.z-index{ width: 500px;
+
+    min-height: 150px; position:absolute;
+    background-color: white;
+ z-index: -2;
+
+}
+#display{
+    background-color: white;
+    margin-top: 200px;
+}
+#span{ background-color: yellow;
+       border: 1px solid black;
+}
+#inline-block{ background-color: yellow;
+    border: 1px solid black;
+display: inline-block;
+height: 150px;
+width: 150px;}
+#span-block{ background-color: yellow;
+    border: 1px solid black;
+display: block;
+height: 150px;
+width: 150px;}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="button"> <a class="my-button"> This is a link</a>
+    
+</div><br><br><br><br>
+<div id="drinks">
+    <ul >
+        <li> Coffee</li>
+        <li> Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+</div><br><br><br><br><br><br>
+       
+   <div class="z-index">
+    <img src="yeimg.gif" alt="imge1" id="img-zindex">
+    <div id="h1">This is a heading</div>
+    <div id="p1"> Becase the image has a z-index of -1, it will be placed behind the text.</div>
+   </div><br><br><br><br><br><br><br>
+
+
+
+
+
+<div id="display">
+    <h2>
+        The display Propert </h2>
+        <h3>display:inline</h3>
+        <p> this is text this is text this<span id="span"> hello</span> <span id="span">there</span> is text this is text </p>
+        <h3>display:inline-block</h3>
+        <p> this is text this is text this<span id="inline-block"> hello</span> <span id="inline-block">there</span> is text this is text </p>
+        <h3>display:inline-block</h3>
+        <p> this is text this is text this<span id="span-block"> hello</span> <span id="span-block">there</span> is text this is text </p>
+        
+</div>
+
+
+
+    
+</body>
+</html>
